@@ -1,0 +1,614 @@
+
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 130px;
+    color: #e1ecf8;
+    background:#1d1d1d;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+section.header-area {
+    width: 130px;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    left: 0;
+}
+section.header-area .side-navbar .image {
+    width: 100px;
+    margin: 0 auto;
+}
+section.header-area .side-navbar .image img {
+    width: 100%;
+}
+section.header-area .side-navbar .name h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+section.header-area .side-navbar .designation p {
+    font-size: 12px;
+    color: #cccccc;
+    font-family: emoji;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section.header-area .sidebar-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #181818;
+}
+section.header-area .sidebar-links ul li {
+    padding: 15px 0px;
+    border-top: 0.2px solid #cccccc;
+}
+section.header-area .sidebar-links ul li a {
+    text-decoration: none;
+    color: #cccccc;
+}
+section.header-area .sidebar-links ul li a.github {
+    margin-left: 20px;
+}
+
+.intro .text {
+    padding: 20px 0px 0px 50px;
+}
+.intro .text h1 {
+    font-size: 86px;
+    font-weight: 700;  
+    color: #fff;
+    letter-spacing: -11px;
+    position: relative;
+    
+
+}
+#world{
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+.blast{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+}
+.blast:hover {
+    color: #2ec9bf;
+    /* color: orange; */
+    /* animation: rubberBand 5s infinite; */
+    animation-name: rubberBand;
+}
+
+
+
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  } 
+
+  img.p {
+    width: 90px;
+    top: 111px;
+    left: 155px;
+    position: absolute;
+}
+section.intro{
+    padding: 90px 30px;
+    position: relative;
+    height: 100vh;
+}
+
+section.intro:before {
+    content: "</html>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    color: #cccc;
+    top: 16px;
+}
+
+section.intro h1:before {
+    content: "<h1>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    color: #cccc;
+    top: -6px;
+    left: -18px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+section.intro h1:after {
+    content: "</h1>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    color: #cccc;
+    bottom: 0;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-left: 22px;
+}
+
+section.intro .text p {
+    margin-top: 30px;
+    color: #737373;
+    position: relative;
+}
+section.intro .text p:before {
+    content: "<p>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    top: -24px;
+    left: -18px;
+    color: #cccc;
+    letter-spacing: 5px;
+
+}
+section.intro .text p:after {
+    content: "</p>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    top: 11px;
+    left: -20px;
+    margin-top: 15px;
+    letter-spacing: 5px;
+    color: #cccc;
+    letter-spacing: 5px;
+}
+section.intro .text a {
+    text-decoration: none;
+    color: #08fdd8;
+    padding: 10px 60px;
+    margin-top: 30px;
+    position: absolute;
+    border: 1px solid #08fdd8;
+    font-weight: 400;
+    background: linear-gradient(to left, rgb(3, 3, 3) 50%, #08fdd8 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+}
+section.intro .text a:hover{
+    background-position: left;
+    color: #000;
+}
+
+section.work{
+    padding: 90px 30px;
+    position: relative;
+}
+section.work, .contact-me .headings {
+    padding-left: 50px;
+
+}
+section.work .headings  h1.heading {
+    letter-spacing: -8px;
+    font-size: 65px;
+    font-weight: 700;
+    color: #08c0a4;
+    position: relative;
+}
+section.work .headings h1.heading:before {
+    content: "<h2>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #cccc;
+    font-weight: 100;
+    left: -18px;
+    top: -5px;
+}
+section.work .headings h1:after {
+    content: "<h2>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #cccc;
+    font-weight: 100;
+    left: -18px;
+    bottom: -20px;
+}
+section.work .headings p {
+    position: relative;
+    margin-top: 40px;
+}
+section.work .headings p:after {
+    content: "</p>";
+    position: absolute;
+    left: -18px;
+    font-family: 'La Belle Aurore';
+    color: #cccc;
+    bottom: -26px;
+}
+section.work .headings p:before {
+    content: "<p>";
+    top: -18px;
+    position: absolute;
+    left: -18px;
+    font-family: 'La Belle Aurore';
+    color: #cccc;
+}
+
+section.work .fake-big {
+    font-family: 'La Belle Aurore';
+    position: absolute;
+    top: 0;
+    left: 36vw;
+    z-index: -1;
+    font-size: 400px;
+    font-weight: 600;
+    color: rgba(255,255,255,.04);
+}
+
+/* -------------------portfolio------------- */
+.container-fluid.folio {
+    padding: 12px !important;
+}
+section.port-gallery .images{
+    position: relative;
+    cursor: zoom-in;
+    overflow: hidden;
+    transition: .4s ease;
+}
+section.port-gallery .images img {
+    width: 100%;
+    height: 200px;
+   
+}
+.col-lg-3.port {
+    padding: 6px;
+    text-align: center;
+}
+
+.portfolio .overlay-photo-work-2 {
+    position: absolute;
+    right: -52%;
+    top: 0;
+    width: 50.2%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(231 31 80 / 38%), rgb(243 28 37));
+    -webkit-transform: rotate(
+180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(
+180deg);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+}
+.portfolio  .overlay-photo-work-1 {
+    position: absolute;
+    left: -52%;
+    top: 0;
+    width: 50.1%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(231 31 80 / 38%), rgb(243 28 37));
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+.portfolio .images:hover .overlay-photo-work-2 {
+    right: 0;
+   
+}
+.portfolio .images:hover .overlay-photo-work-1 {
+    left: 0;
+    z-index: 1;
+
+}
+
+section.port-gallery .content{
+    position: relative;
+}
+a.visit {
+    position: absolute;
+    text-decoration: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #00000070;
+    color: #2ec9bf;
+    font-family: 'Font Awesome 5 Brands';
+    z-index: 2;    
+    letter-spacing: 4px;
+}
+.portfolio .zoom {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #fff;
+    transition: .3s ease;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: rotate( 
+45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate( 
+45deg);
+}
+.portfolio .images:hover .zoom {
+    top: 32%;
+    z-index: 1;
+    
+}
+section.port-gallery .images img{
+    transition: .3s ease;
+}
+
+section.port-gallery .images:hover img{
+    transform: scale(1.1);
+}
+
+
+
+/* -----------------------contact-me section---------- */
+.contact-me{
+    padding: 100px 0px;
+    position: relative;
+    
+}
+.contact-me input.form-control {
+    height: 52px;
+    margin: 10px 0;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    color: #000;
+    background: #2b2b2b;
+    transition: .3s ease;
+}
+.contact-me textarea.form-control {
+    
+    margin: 20px 0;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    color: #000;
+    background: #2b2b2b;
+    transition: .3s ease;
+}
+section.contact-me .headings  h1.heading {
+    letter-spacing: -8px;
+    font-size: 65px;
+    font-weight: 700;
+    color: #08c0a4;
+    position: relative;
+}
+section.contact-me .headings h1.heading:before {
+    content: "<h2>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #cccc;
+    font-weight: 100;
+    left: -18px;
+    top: -5px;
+}
+section.contact-me .headings h1:after {
+    content: "<h2>";
+    position: absolute;
+    font-family: 'La Belle Aurore';
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #cccc;
+    font-weight: 100;
+    left: -18px;
+    bottom: -20px;
+}
+section.contact-me .headings p {
+    position: relative;
+    margin-top: 40px;
+}
+section.contact-me .headings p:after {
+    content: "</p>";
+    position: absolute;
+    left: -18px;
+    font-family: 'La Belle Aurore';
+    color: #cccc;
+    bottom: -26px;
+}
+section.contact-me .headings p:before {
+    content: "<p>";
+    top: -18px;
+    position: absolute;
+    left: -18px;
+    font-family: 'La Belle Aurore';
+    color: #cccc;
+}
+
+section.contact-me input.btn-primary.f14 {
+    width: 100%;
+    background: #2ec9bf;
+    border: none;
+    height: 46px;
+    font-size: 20px;
+    font-weight: 600;
+}
+section.contact-me .form {
+    margin: 50px 0px;
+    position: relative;
+}
+
+.contact-me input.form-control:focus{
+    border-bottom: 2px solid #08c0a4;
+    box-shadow: none;
+}
+.contact-me textarea.form-control:focus{
+    border-bottom: 2px solid #08c0a4;
+    box-shadow: none;
+}
+
+.contact-me input.btn-primary:focus{
+    border-bottom: 2px solid #08c0a4;
+    direction: ltr;
+    box-shadow: none;
+    
+}
+section.contact-me .form:before {
+    position: absolute;
+    content: "<form>";
+    font-family: 'La Belle Aurore';
+    color: #9a9a9a;
+    left: -18px;
+    top: -32px;
+}
+section.contact-me .form:after{
+    position: absolute;
+    content: "</form>";
+    font-family: 'La Belle Aurore';
+    color: #9a9a9a;
+    left: -18px;
+    bottom: -40px;
+}
+.scroll-down--left {
+    left: 10px;
+    right: auto;
+}
+.scroll-down {
+    position: absolute;
+    right: 10px;
+    bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+}
+.scroll-down svg {
+    margin-top: 10px;
+    width: 10px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+svg {
+    will-change: transform;
+}
+.scroll-down span {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -webkit-animation-name: bounce-1;
+    animation-name: bounce-1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    font-weight: 600;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.scroll-down {
+    position: absolute;
+    right: 10px;
+    bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #fff;
+}
+.scroll-down--left {
+    left: 10px;
+    right: auto;
+}
+@keyframes bounce-1{
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+section.active.header-area {
+    left: 0;
+}

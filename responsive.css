@@ -1,0 +1,197 @@
+@media(max-width:400px){
+}
+@media only screen and (min-width: 763px) and (max-width:766px){}
+
+
+
+
+
+
+@media (max-width:767px){
+    section.header-area {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        left: -10000px;
+        z-index: 1;
+        right: 0;
+        transition: 1s ease-in-out;
+    }
+    #world {
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    section.work .fake-big{
+        display: none;
+    }
+    body{
+        padding: 0;
+    }
+    .intro .text {
+        padding: 0px;
+    }
+    .intro .text h1 {
+        font-size: 42px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -7px;
+        position: relative;
+        margin-top: 60px;
+    }
+    img.p {
+        width: 50px;
+        top: 50px;
+        left: 56px;
+        position: absolute;
+    }
+    section.intro .text p{
+        font-size: 14px;
+    }
+    section.intro .text a{
+        font-size: 14px;
+    }
+    section.work, .contact-me .headings {
+        padding-left: 30px;
+    }
+    section.work .headings h1.heading {
+        letter-spacing: -8px;
+        font-size: 45px;
+        font-weight: 700;
+        color: #08c0a4;
+        position: relative;
+    }
+    section.work .headings p {
+        position: relative;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    section.contact-me .headings h1.heading {
+        letter-spacing: -8px;
+        font-size: 45px;
+        font-weight: 700;
+        color: #08c0a4;
+        position: relative;
+    }
+    section.contact-me .headings p {
+        position: relative;
+        margin-top: 40px;
+        font-size: 14px;
+    }
+    section.contact-me .form:before {
+        position: absolute;
+        content: "<form>";
+        font-family: 'La Belle Aurore';
+        color: #9a9a9a;
+        left: -6px;
+        top: -32px;
+    }
+    section.contact-me .form:after {
+        position: absolute;
+        content: "</form>";
+        font-family: 'La Belle Aurore';
+        color: #9a9a9a;
+        left: -6px;
+        bottom: -40px;
+    }
+    .toggle-btn {
+        position: fixed;
+        right: 12px;
+        top: 12px;
+        font-size: 30px;
+        z-index: 11111111;
+        background: #000;
+        padding: 0px 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 280px) and (max-width:653px){}
+@media only screen and (min-width: 540px) and (max-width: 720px){}
+@media only screen and (min-width: 411px) and (max-width: 736px){}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    section.header-area {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        left: -10000px;
+        z-index: 1;
+        right: 0;
+        transition: 1s ease-in-out;
+    }
+    #world {
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 0 !important;
+        height: 0 !important;
+    }
+    section.work .fake-big{
+        display: none;
+    }
+    body{
+        padding: 0;
+    }
+    .intro .text {
+        padding: 0px;
+    }
+    .intro .text h1 {
+        font-size: 85px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: -10px;
+        position: relative;
+        margin-top: 60px;
+    }
+    .toggle-btn {
+        position: fixed;
+        right: 12px;
+        top: 12px;
+        font-size: 30px;
+        z-index: 11111111;
+        background: #000;
+        padding: 0px 10px;
+    }
+    section.intro .text p {
+        margin-top: 30px;
+        color: #737373;
+        position: relative;
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    #world {
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    section.work .fake-big {
+        font-family: 'La Belle Aurore';
+        position: absolute;
+        top: 0;
+        left: 36vw;
+        z-index: -1;
+        font-size: 269px;
+        font-weight: 600;
+        color: rgba(255,255,255,.04);
+    }   
+}
+
