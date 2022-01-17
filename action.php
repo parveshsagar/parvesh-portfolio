@@ -21,10 +21,10 @@
 
     $data = mail($to,$subject,$message,$header);  
     if( $data == 'true' ) {
-        // echo "Success";
-        header("Location:https://parveshsagar.github.io/parvesh-portfolio/?status=sent");
+        echo "Success";
+        header("Location:https://parveshsagar.github.io/parvesh-portfolio/");
     }else {
-        // echo "False";
-        header("Location:https://parveshsagar.github.io/parvesh-portfolio/?status=failed");
+        echo "False";
+//         header("Location:https://parveshsagar.github.io/parvesh-portfolio/?status=failed");
     }
 ?>
