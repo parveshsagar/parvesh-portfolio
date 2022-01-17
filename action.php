@@ -22,9 +22,9 @@
     $data = mail($to,$subject,$message,$header);  
     if( $data == 'true' ) {
         // echo "Success";
-        header("Location:https://parveshsagar.github.io/parvesh-portfolio?status=sent");
+        header("Location:https://parveshsagar.github.io/parvesh-portfolio/?status=sent");
     }else {
         // echo "False";
-        header("Location:https://parveshsagar.github.io/parvesh-portfolio?status=failed");
+        header("Location:https://parveshsagar.github.io/parvesh-portfolio/?status=failed");
     }
 ?>
